@@ -7,14 +7,14 @@ function numberToRoman(number) {
     return "Please enter a number less than or equal to 3999";
   }
 
-  if(number.length===0){
+  if(number.length===0 || isNaN(number)){
     return "Please enter a valid number";
   }
 
   if(number<1){
     return "Please enter a number greater than or equal to 1";
   }
-  
+
   let string = '';
   let count = 0;
   
