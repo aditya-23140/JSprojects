@@ -41,6 +41,7 @@ const cashChange = () => {
   if(toReturn<0){
     alert("Customer does not have enough money to purchase the item");
     changeDue.classList.remove("change-due");
+    changeDue.innerHTML = '';
     return;
   }
   while (toReturn > 0 && k < revCid.length) {
